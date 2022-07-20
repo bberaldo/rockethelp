@@ -1,6 +1,6 @@
 import { NativeBaseProvider, StatusBar } from 'native-base';
 import React from 'react';
-import { SignIn } from './src/screens/SignIn';
+import { Routes } from './src/routes';
 import { Loading } from './src/components/Loading';
 import {
 	useFonts,
@@ -20,7 +20,7 @@ export default function App() {
 				backgroundColor="transparent"
 				translucent
 			/>
-			{fontsLoaded ? <SignIn /> : <Loading />}
+			{fontsLoaded ? <Routes /> : <Loading />}
 		</NativeBaseProvider>
 	);
 }
